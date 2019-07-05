@@ -5,7 +5,7 @@ int main(){
     int a[n];for(int i=0;i<n;i++){scanf("%d",&a[i]);}
     
     //set maxk to a very olarge vcalue like the limit of int. here, i'm taking a no big emough for the examples
-    int maxk = 1000000;
+    int maxk = 1000000000;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int absolute = abs(i-j);
