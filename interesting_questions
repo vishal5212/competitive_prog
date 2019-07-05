@@ -1,0 +1,14 @@
+What's the difference in these two macros ? 
+
+#define LL long long int 
+   and 
+typedef long long LL;
+and
+
+What's the difference between these ? 
+
+inline void myFunction(){}
+   and 
+void myFunction(){}
+
+Link:http://codeforces.com/blog/entry/22456
