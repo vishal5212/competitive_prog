@@ -8,6 +8,10 @@ int main(){
     char ans[n+2], s[n+2];scanf("%s",s);
     for(int i=0;i<n;i++){
         char first,second;
+        while(s[i]==s[i+1]){
+            i++;    
+        };
+        
         first=s[i];second=s[i+1];
         
         while(first==second){
