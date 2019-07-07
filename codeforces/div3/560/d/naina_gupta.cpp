@@ -49,6 +49,10 @@ int main()
           j++;
         }
       }
+      
+      //how the fuck does this statement matter
+        //this matters cos the above loop only checks if all the nos that are divisors are present
+        //the above loop makes sure that all present are divisors by counting the divisors found above and divisors that are given in problem
       if(j!=((n+1)/2))
         f=1;
       if(f==1){
