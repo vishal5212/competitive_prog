@@ -120,7 +120,7 @@ Then the results will be identical, since there won't be overflow.
         for(w=1;w<half;w++){
             long long current = (long long)a[w]*a[n-1-w];
             if(current!=result){
-                printf("-1");
+                printf("-1\n");
                 break;
             }
         }
