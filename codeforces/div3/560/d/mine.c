@@ -21,7 +21,7 @@ int main(){
         
         qsort(a,n,sizeof(a[0]),comparator);
         
-        int result = a[0]*a[n-1];
+        long long result = a[0]*a[n-1];
         
         for(int i=1;i<half;i++){
             if(a[i]*a[n-1-i]!=result){
@@ -29,7 +29,7 @@ int main(){
                 return 0;
             }
         }
-        printf("%d\n",result);
+        printf("%I64d\n",result);
     }
     /*int ans = ceil(t/2.0);
     printf("%d",ans);*/
