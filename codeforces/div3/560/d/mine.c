@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 
 int comparator(const void *p, const void *q){
     int l = *(const int *)p;
