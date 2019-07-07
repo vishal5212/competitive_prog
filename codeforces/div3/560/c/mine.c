@@ -10,6 +10,7 @@ int main(){
         char first,second;
         while(s[i]==s[i+1]){
             i++;    
+            cnt++;
         };
         
         first=s[i];second=s[i+1];
@@ -19,7 +20,10 @@ int main(){
             i++;
             second=s[i];
         }
-        if(second!='\0'){
+        if(first!='\0' && second=='\0'){
+            cnt++;
+        }
+        else{
             ans[j++]=first;ans[j++]=second;
         }
        
