@@ -116,14 +116,18 @@ Then the results will be identical, since there won't be overflow.
 */
         long long result = (long long) a[0]*a[n-1];
         
-        for(int i=1;i<half;i++){
-            long long current = (long long)a[i]*a[n-1-i];
+        int w;
+        for(int w=1;w<half;w++){
+            long long current = (long long)a[w]*a[n-1-w];
             if(current!=result){
                 printf("-1");
-                return 0;
+                break;
             }
         }
-        printf("%I64d\n",result);
+        if(w==half){
+            printf("%I64d\n",result);
+        }
+        
     }
     /*int ans = ceil(t/2.0);
     printf("%d",ans);*/
