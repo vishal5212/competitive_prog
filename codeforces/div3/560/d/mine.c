@@ -24,7 +24,7 @@ int main(){
         long long result = a[0]*a[n-1];
         
         for(int i=1;i<half;i++){
-            long long current = a[i]*a[i-1];
+            long long current = a[i]*a[n-1-i];
             if(current!=result){
                 printf("-1");
                 return 0;
