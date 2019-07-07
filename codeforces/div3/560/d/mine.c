@@ -117,7 +117,7 @@ Then the results will be identical, since there won't be overflow.
         long long result = (long long) a[0]*a[n-1];
         
         int w;
-        for(int w=1;w<half;w++){
+        for(w=1;w<half;w++){
             long long current = (long long)a[w]*a[n-1-w];
             if(current!=result){
                 printf("-1");
